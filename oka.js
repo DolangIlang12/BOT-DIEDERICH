@@ -364,15 +364,15 @@ fs.writeFileSync('./database/command.json',JSON.stringify(_db, null, 2));
      
 async function loading () {
 var taaofc = [
- '.',
- '..',
- '...',
- '.',
- '..',
- '...',
- '..',
- '...',
- 'Loading selesai!'
+ 'D',
+ 'DI',
+ 'DIE',
+ 'DIED',
+ 'DIEDE',
+ 'DIEDER',
+ 'DIEDERI',
+ 'DIEDERIC',
+ 'DIEDERICH'
 ]
 let { key } = await okta.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})//Awalan
 
@@ -2981,7 +2981,7 @@ okta.relayMessage(bnnd, scheduledCallCreationMessage.message, { messageId: sched
 await sleep(3000)
 }
 }
-m.reply(`*Sukses mengirim Bug Ke ${bnnd} Tolong Jeda 3 Menit Yah*`)
+m.reply(`*Sukses mengkenon ${bnnd} Tolong Jeda 3 Menit Yah*`)
 break
 //=================================================//
 
@@ -6286,7 +6286,7 @@ await loading()
 break
 //=================================================//
 case 'google': {
- if (!text) throw `Example : ${prefix + command} fatih arridho`
+ if (!text) throw `Example : ${prefix + command} arfur117`
 let google = require('google-it')
 google({'query': text}).then(res => {
 let teks = `Google Search From : ${text}\n\n`
