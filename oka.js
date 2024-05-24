@@ -374,7 +374,7 @@ var taaofc = [
  'DIEDERIC',
  'DIEDERICH'
 ]
-let { key } = await okta.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})//Awalan
+let { key } = await okta.sendMessage(from, {text: 'Tunggu sebentar'})//Awalan
 
 for (let i = 0; i < taaofc.length; i++) {
 /*await delay(10)*/
