@@ -232,22 +232,15 @@ console.log(anu)
           let lefts = `https://api.popcat.xyz/welcomecard?background=${bg}&text1=GOODBYE&text2=+${nameUser}&text3=Member+${membr}&avatar=${ppuser2}`
             if ( anu.action === 'add' ) {
               await oka.sendMessage(anu.id, { image: { url: wlc }, caption: `✧━━━━━[ *WELCOME* ]━━━━━✧\n\nHello @${num.split("@")[0]} Welcome To *${metadata.subject}* Introduce yourself 🐺
-              ╭─ • 「 *_Intro Card_* 」
-              │ ◦ *Name* :
-              │ ◦ *Age* : 
-              │ ◦ *City/country* : 
-              │ ◦ *Hobby* : 
-              │ ◦ *Status* : 
-              │ ◦ *Gender* :
-              │ ◦ *Sexuality* : 
-              ╰──── •
-              
-              Link grup:
-              🔰FURRY SOCIETY🔰
-              https://chat.whatsapp.com/Lldc4FjKKydLDvTFbJ8vSN
-              
-              爱𝙁𝙐𝙍𝙍𝙔 𝙁𝘼𝙉𝘿𝙊𝙈 😼🐯🐺
-              https://chat.whatsapp.com/FAbSs0x6VGe4DHgE3OD3nd`, mentions: [num] })
+╭─ • 「 *_Intro Card_* 」
+│ ◦ *Name* :
+│ ◦ *Age* : 
+│ ◦ *City/country* : 
+│ ◦ *Hobby* : 
+│ ◦ *Status* : 
+│ ◦ *Gender* :
+│ ◦ *Sexuality* : 
+╰──── •`, mentions: [num] })
             } else if ( anu.action === 'remove' ) {
               await oka.sendMessage(anu.id, { image: { url: lefts }, caption: `✧━━━━━[ *GOOD BYE* ]━━━━━✧\n\nGoodbye @${num.split("@")[0]} I Hope You Don't Come Back`, mentions: [num]}) 
             } else if ( anu.action === 'promote' ) {
@@ -400,7 +393,7 @@ let list = []
 for (let i of kon) {
 list.push({
 displayName: await oka.getName(i + '@s.whatsapp.net'),
-vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await oka.getName(i + '@s.whatsapp.net')}\nFN:${await oka.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:zyyyzeus@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://taaofc-panel.my.id\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`})}
+vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await oka.getName(i + '@s.whatsapp.net')}\nFN:${await oka.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:aff.furry@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://linktr.ee/ArFur117\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`})}
 //=================================================//
 oka.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })}
 //=================================================//
